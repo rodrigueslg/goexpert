@@ -1,0 +1,4 @@
+go install github.com/google/wire/cmd/wire@latest
+
+> wire
+> go run main.go wire_gen.go
