@@ -1,0 +1,1 @@
+go run main.go https://viacep.com.br/ws/30240-590/json

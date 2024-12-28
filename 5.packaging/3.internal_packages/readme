@@ -1,0 +1,3 @@
+cd cmd
+go mod edit -replace github.com/rodrigueslg/fc-goexpert/packaging/3/math=../math
+go mod tidy

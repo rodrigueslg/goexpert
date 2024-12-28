@@ -1,0 +1,11 @@
+go test
+go test -v
+
+go test -coverprofile=coverage.out
+go tool cover -html=coverage.out
+
+go test -bench=.
+go test -bench=. -run=^# // output apenas do benchmark sem os testes
+
+go test -fuzz=.
+go test -fuzz=. -fuzztime=5s -run=^# // output apenas do fuzz sem os testes

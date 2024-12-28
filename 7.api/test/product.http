@@ -1,0 +1,30 @@
+POST http://localhost:8080/products HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "My Product",
+    "price": 100.0
+}
+
+###
+
+GET http://localhost:8080/products  HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzUzNDQyMjEsInN1YiI6IjczOGVlZjg5LTBkMTctNGVlYi04NmFmLWUwMmI2NmNhOWYwYyJ9.VzXPAVxIOZJxv7zliQJFeYnwdo0RUeYHUe7qguCDecY
+
+###
+
+GET http://localhost:8080/products/f0347d6c-c6e6-412c-9169-db3b045605df HTTP/1.1
+
+###
+
+PUT http://localhost:8080/products/f0347d6c-c6e6-412c-9169-db3b045605df HTTP/1.1
+Content-Type: application/json
+
+{    
+    "name": "My Product 2",
+    "price": 100.99
+}
+
+###
+
+DELETE http://localhost:8080/products/f0347d6c-c6e6-412c-9169-db3b045605df HTTP/1.1
