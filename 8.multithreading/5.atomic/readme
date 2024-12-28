@@ -1,0 +1,8 @@
+go install github.com/linkxzhou/http_bench
+go run main.go -race
+
+// 10000 requests to run - 1000 to run concurrently
+http_bench http://localhost:8080 -n 10000 -c 1000
+
+// printed number must be equals to 10000 because it was added by an atomic operation
+> curl http://localhost:8080
